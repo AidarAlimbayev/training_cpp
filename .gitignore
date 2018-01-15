@@ -1,12 +1,1 @@
-# folder repos
-repos/
-new_folder/
-test/
-multiInst
-*.txt
--
-
-
-# test/.txt - files
-test/*.txt
 
