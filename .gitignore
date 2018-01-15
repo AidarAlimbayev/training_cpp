@@ -1,5 +1,8 @@
 # folder repos
 repos/
 
-# .txt - files
+# test/.txt - files
 test/*.txt
+
+
+/repos
