@@ -3,6 +3,7 @@ repos/
 new_folder/
 test/
 multiInst
+*.txt
 -
 
 
