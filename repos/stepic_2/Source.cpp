@@ -5,43 +5,142 @@ using namespace std;
 int main()
 {
 	int n;
+	int mark = 0;
 	cin >> n;
 	// ввод
-	int gradient[100][100];
+	int symmetry[10][10];
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
-			gradient[i][j] = 0;
+			symmetry[i][j] = 0;
+		}
+	}
+
+	// ручной ввод
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cin >> symmetry[i][j];
 		}
 	}
 
 	// обработка
 	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			if (i == j) {
-				gradient[i][j] = 0;
-			} 
-			else if (i < j) 
-			{
-				gradient[i][j] = (j - i);
-			} 
-			else if (i > j) 
-			{
-				gradient[i][j] = (i - j);
-			} 
+		for (int j = 0; j < n; j++){
+			if (symmetry[i][j] == symmetry[j][i]) {
+				mark = 0;
+			} else {
+				mark = 1;
+			}
 		}
 	}
 
 	// вывод
 	//int gradient[n][n];
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			cout << gradient[i][j] << " ";
-		}
-		cout << endl;
+	if (mark == 0){
+		cout << "YES";
+	} else {
+		cout << "NO";
 	}
+	
 
 	return 0;
 }
+
+
+// Замена столбцов
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+// 	int temp = 0; // временная переменная для перемещения
+// 	int n, m;
+// 	int i_index, j_index;
+// 	i_index = 0;
+// 	j_index = 0;
+	
+// 	cin >> n >> m;
+// 	// инициализация
+// 	int castling[100][100];
+// 	for (int i = 0; i < n; i++) {
+// 		for (int j = 0; j < m; j++) {
+// 			castling[i][j] = 0;
+// 		}
+// 	}
+
+// 	for (int i = 0; i < n; i++) {
+// 		for (int j = 0; j < m; j++) {
+// 			cin >> castling[i][j];
+// 		}
+// 	}
+
+// 	cin >> i_index >> j_index;
+
+// 	// обработка
+// 	for (int i = 0; i < n; i++) {
+// 		temp = castling[i][i_index];
+// 		castling[i][i_index] = castling[i][j_index];
+// 		castling[i][j_index] = temp;
+// 	}
+
+
+
+// 	// вывод
+// 	//int gradient[n][n];
+// 	for (int i = 0; i < n; i++) {
+// 		for (int j = 0; j < m; j++) {
+// 			cout << castling[i][j] << " ";
+// 		}
+// 		cout << endl;
+// 	}
+
+// 	return 0;
+// }
+
+// #include <iostream>
+
+// using namespace std;
+
+// int main()
+// {
+// 	int n;
+// 	cin >> n;
+// 	// ввод
+// 	int gradient[100][100];
+// 	for (int i = 0; i < n; i++) {
+// 		for (int j = 0; j < n; j++) {
+// 			gradient[i][j] = 0;
+// 		}
+// 	}
+
+// 	// обработка
+// 	for (int i = 0; i < n; i++) {
+// 		for (int j = 0; j < n; j++) {
+// 			if (i == j) {
+// 				gradient[i][j] = 0;
+// 			} 
+// 			else if (i < j) 
+// 			{
+// 				gradient[i][j] = (j - i);
+// 			} 
+// 			else if (i > j) 
+// 			{
+// 				gradient[i][j] = (i - j);
+// 			} 
+// 		}
+// 	}
+
+// 	// вывод
+// 	//int gradient[n][n];
+// 	for (int i = 0; i < n; i++) {
+// 		for (int j = 0; j < n; j++) {
+// 			cout << gradient[i][j] << " ";
+// 		}
+// 		cout << endl;
+// 	}
+
+// 	return 0;
+// }
 
 //#include <iostream>
 //
