@@ -1,0 +1,21 @@
+﻿Build started 26.05.2018 0:58:52.
+     1>Project "C:\Users\www\Source\Repos\NewRepo\training_cpp\repos\stepic_2\stepic_2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\fool.cpp
+         fool.cpp
+     1>..\..\fool.cpp(7): error C2059: syntax error : ';'
+     1>..\..\fool.cpp(8): error C3493: 'S' cannot be implicitly captured because no default capture mode has been specified
+     1>..\..\fool.cpp(10): error C3493: 'n' cannot be implicitly captured because no default capture mode has been specified
+     1>..\..\fool.cpp(10): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\..\fool.cpp(13): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\..\fool.cpp(17): error C2065: 'l' : undeclared identifier
+     1>..\..\fool.cpp(18): error C2065: 'l' : undeclared identifier
+     1>..\..\fool.cpp(24): error C2059: syntax error : '}'
+     1>..\..\fool.cpp(24): error C2143: syntax error : missing ';' before '}'
+     1>..\..\fool.cpp(27): error C2143: syntax error : missing ';' before '{'
+     1>..\..\fool.cpp(27): error C2447: '{' : missing function header (old-style formal list?)
+     1>Done Building Project "C:\Users\www\Source\Repos\NewRepo\training_cpp\repos\stepic_2\stepic_2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.92
