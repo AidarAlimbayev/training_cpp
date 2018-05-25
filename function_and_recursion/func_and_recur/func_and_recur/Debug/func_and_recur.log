@@ -1,0 +1,2 @@
+﻿  func_and_recur.cpp
+c:\users\ww\documents\aidar\training_cpp\function_and_recursion\func_and_recur\func_and_recur\func_and_recur.cpp(24): fatal error C1010: непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "stdafx.h"" в источник.
